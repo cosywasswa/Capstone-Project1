@@ -1,0 +1,332 @@
+@media only screen and (max-width: 768px) {
+    *,
+    html {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+  
+    header {
+      width: 100%;
+    }
+  
+    .nav-mobile li {
+      list-style: none;
+      font-family: "Inter", "Times New Roman", Times, serif;
+      font-size: 2rem;
+      font-weight: 700;
+      border-bottom: 1px solid #6f6c6b;
+      padding-bottom: 10px;
+    }
+  
+    .nav-mobile {
+      display: flex;
+      position: fixed;
+      left: -100%;
+      top: 0;
+      gap: 2rem;
+      flex-direction: column;
+      background-color: #3c3a39;
+      width: 100%;
+      height: 755px;
+      padding: 4rem 1rem;
+      text-align: start;
+      transition: 0.5s;
+      z-index: 999;
+      margin-top: 10px;
+    }
+  
+    .nav-mobile.active {
+      left: 0;
+    }
+  
+    .link {
+      margin: 16px 0;
+    }
+  
+    .nav-mobile a {
+      color: #fff5e1;
+      text-decoration: none;
+      font-family: "Inter", sans-serif;
+      font-size: 32px;
+      line-height: 44px;
+      padding-left: 20px;
+    }
+  
+    .nav-mobile li {
+      list-style: none;
+      font-family: "Inter", "Times New Roman", Times, serif;
+      font-size: 2rem;
+      font-weight: 700;
+      border-bottom: 1px solid #6f6c6b;
+      padding-bottom: 10px;
+    }
+  
+    .hamburger {
+      display: block;
+      flex-direction: column;
+      align-items: flex-start;
+      z-index: 1000;
+      width: 20px;
+      color: #67798e;
+      margin-top: 30px;
+      margin-left: 30px;
+    }
+  
+    .lines {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px 0;
+      transition: all 0.5s ease;
+      background-color: #67798e;
+    }
+    .hamburger.active .lines:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active .lines:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburger.active .lines:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .sub-main {
+      background-image: url(images/back2.PNG);
+    }
+  
+    .home-1 {
+      width: 90%;
+      background-size: contain;
+      background-position: center;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  
+    .tittle {
+      width: 80%;
+      margin-top: 50px;
+    }
+  
+    .tittle h5 {
+      color: red;
+      font-size: 22px;
+      text-align: left;
+    }
+  
+    .tittle h1 {
+      color: red;
+      font-size: 25px;
+      font-family: "Lato", sans-serif;
+      font-weight: 900px;
+      text-align: left;
+      width: 95vw;
+      margin-bottom: 30px;
+    }
+
+    .details {
+        background-color: white;
+        z-index: 1000;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .details p {
+      padding-top: 10px;
+      font-size: 17px;
+      font-family: "Lato", sans-serif;
+      text-align: center;
+    }
+
+    .dates {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 50px;
+    }
+
+    .dates p {
+        font-family: "Lato", sans-serif;
+    }
+
+    .programs-about {
+        background-color: white;
+    }
+
+    .programs-about h4 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .progh4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .progp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .progp p {
+        font-family: "Lato", sans-serif;  
+       
+    }
+    
+    .conf-logo {
+        width: 70%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        list-style: none;
+        border: 0.1px outset whitesmoke;
+        margin: auto;
+        padding: 20px 0;
+    }
+
+    .conf-logo h2 {
+        font-family: "Lato", sans-serif;   
+    }
+
+    .seepast {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    .seepast hr {
+        width: 10%;
+        margin-bottom: 10px;
+        border-color: red;
+    }
+
+    .seepast h4 {
+        font-family: "Lato", sans-serif;   
+        padding-bottom: 5px; 
+        margin-top: 50px;
+    }
+
+    .seepast p {
+        font-family: "Lato", sans-serif;  
+        font-size: 12px; 
+        text-align: center;
+        padding-bottom: 5px;
+        font-weight: 700px;
+    }
+
+    .seepast .p2 {
+        margin-bottom: 20px;
+    }
+
+    .past-conf {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .past1 {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(rgba(200,0,0,0.7),rgba(220,0,0,0.8)), url(images/2021.PNG);
+        background-position: center;
+        margin: auto;
+        height: 10rem;
+    
+    }
+
+    .past1 h2 {
+        font-family: "Lato", sans-serif; 
+        color: white; 
+    }
+
+    .past1 p {
+        font-family: "Lato", sans-serif;
+        color: white;  
+    }
+
+    .past2 {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(rgba(200,0,0,0.7),rgba(220,0,0,0.8)), url(images/2022.PNG);
+        background-position: center;
+        margin: auto;
+        height: 10rem  
+    }
+
+    .past2 h2 {
+        font-family: "Lato", sans-serif; 
+        color: white; 
+    }
+
+    .past2 p {
+        font-family: "Lato", sans-serif;
+        color: white;  
+    }
+
+    .last {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        gap: 50px;
+        height: 10rem;
+        background-color: rgb(60, 60, 88);
+      }
+
+      .row h4 {
+        color: white;
+      }
+
+      .logos h4,
+      .logos p,
+      .non h4 {
+        color: white;
+      }
+
+      footer {
+        display: flex;
+        margin-left: 30px;
+        height: 5rem;
+        list-style: none;
+        width: 60%;
+      }
+
+      .logo-footer,
+      .footer h2 {
+        list-style: none;
+      }
+
+
+
+
+
+}
