@@ -1,332 +1,839 @@
 @media only screen and (max-width: 768px) {
-    *,
-    html {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-  
-    header {
-      width: 100%;
-    }
-  
-    .nav-mobile li {
-      list-style: none;
-      font-family: "Inter", "Times New Roman", Times, serif;
-      font-size: 2rem;
-      font-weight: 700;
-      border-bottom: 1px solid #6f6c6b;
-      padding-bottom: 10px;
-    }
-  
-    .nav-mobile {
-      display: flex;
-      position: fixed;
-      left: -100%;
-      top: 0;
-      gap: 2rem;
-      flex-direction: column;
-      background-color: #3c3a39;
-      width: 100%;
-      height: 755px;
-      padding: 4rem 1rem;
-      text-align: start;
-      transition: 0.5s;
-      z-index: 999;
-      margin-top: 10px;
-    }
-  
-    .nav-mobile.active {
-      left: 0;
-    }
-  
-    .link {
-      margin: 16px 0;
-    }
-  
-    .nav-mobile a {
-      color: #fff5e1;
-      text-decoration: none;
-      font-family: "Inter", sans-serif;
-      font-size: 32px;
-      line-height: 44px;
-      padding-left: 20px;
-    }
-  
-    .nav-mobile li {
-      list-style: none;
-      font-family: "Inter", "Times New Roman", Times, serif;
-      font-size: 2rem;
-      font-weight: 700;
-      border-bottom: 1px solid #6f6c6b;
-      padding-bottom: 10px;
-    }
-  
-    .hamburger {
-      display: block;
-      flex-direction: column;
-      align-items: flex-start;
-      z-index: 1000;
-      width: 20px;
-      color: #67798e;
-      margin-top: 30px;
-      margin-left: 30px;
-    }
-  
-    .lines {
-      display: block;
-      width: 25px;
-      height: 3px;
-      margin: 5px 0;
-      transition: all 0.5s ease;
-      background-color: #67798e;
-    }
-    .hamburger.active .lines:nth-child(2) {
-      opacity: 0;
-    }
-  
-    .hamburger.active .lines:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
-  
-    .hamburger.active .lines:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-    }
-  
-    .sub-main {
-      background-image: url(images/back2.PNG);
-    }
-  
-    .home-1 {
-      width: 90%;
-      background-size: contain;
-      background-position: center;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-  
-    .tittle {
-      width: 80%;
-      margin-top: 50px;
-    }
-  
-    .tittle h5 {
-      color: red;
-      font-size: 22px;
-      text-align: left;
-    }
-  
-    .tittle h1 {
-      color: red;
-      font-size: 25px;
-      font-family: "Lato", sans-serif;
-      font-weight: 900px;
-      text-align: left;
-      width: 95vw;
-      margin-bottom: 30px;
-    }
+  *,
+  html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
 
-    .details {
-        background-color: white;
-        z-index: 1000;
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-  
-    .details p {
-      padding-top: 10px;
-      font-size: 17px;
-      font-family: "Lato", sans-serif;
-      text-align: center;
-    }
+  body {
+    background-image: url(images/landingImg.png);
+  }
 
-    .dates {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        margin-bottom: 50px;
-    }
+  header {
+    width: 100%;
+    background-image: url(images/landingImg1.png);
+  }
 
-    .dates p {
-        font-family: "Lato", sans-serif;
-    }
+  .nav-desktop {
+    display: none;
+  }
 
-    .programs-about {
-        background-color: white;
-    }
+  .my-logo {
+    display: none;
+  }
 
-    .programs-about h4 {
-        font-size: 22px;
-        text-align: center;
-    }
+  .nav-mobile li {
+    list-style: none;
+    font-family: "Inter", "Times New Roman", Times, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 1px solid #6f6c6b;
+    padding-bottom: 10px;
+  }
 
-    .progh4 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 30px;
-    }
+  .nav-mobile {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    gap: 2rem;
+    flex-direction: column;
+    background-color: #3c3a39;
+    width: 100%;
+    height: 755px;
+    padding: 4rem 1rem;
+    text-align: start;
+    transition: 0.5s;
+    z-index: 999;
+    margin-top: 10px;
+  }
 
-    .progp {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 40px;
-    }
+  .nav-mobile.active {
+    left: 0;
+  }
 
-    .progp p {
-        font-family: "Lato", sans-serif;  
-       
-    }
-    
-    .conf-logo {
-        width: 70%;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        list-style: none;
-        border: 0.1px outset whitesmoke;
-        margin: auto;
-        padding: 20px 0;
-    }
+  .link {
+    margin: 16px 0;
+  }
 
-    .conf-logo h2 {
-        font-family: "Lato", sans-serif;   
-    }
+  .nav-mobile a {
+    color: #fff5e1;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    padding-left: 20px;
+  }
 
-    .seepast {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 80%;
-        margin: auto;
-    }
+  .nav-mobile li {
+    list-style: none;
+    font-family: "Inter", "Times New Roman", Times, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 1px solid #6f6c6b;
+    padding-bottom: 10px;
+  }
 
-    .seepast hr {
-        width: 10%;
-        margin-bottom: 10px;
-        border-color: red;
-    }
+  .hamburger {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1000;
+    width: 20px;
+    color: #67798e;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
 
-    .seepast h4 {
-        font-family: "Lato", sans-serif;   
-        padding-bottom: 5px; 
-        margin-top: 50px;
-    }
+  .lines {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.5s ease;
+    background-color: #67798e;
+  }
+  .hamburger.active .lines:nth-child(2) {
+    opacity: 0;
+  }
 
-    .seepast p {
-        font-family: "Lato", sans-serif;  
-        font-size: 12px; 
-        text-align: center;
-        padding-bottom: 5px;
-        font-weight: 700px;
-    }
+  .hamburger.active .lines:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
 
-    .seepast .p2 {
-        margin-bottom: 20px;
-    }
+  .hamburger.active .lines:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
-    .past-conf {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+  .sub-main {
+    background-image: url(images/landingImg.png);
+  }
 
-    .past1 {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-image: linear-gradient(rgba(200,0,0,0.7),rgba(220,0,0,0.8)), url(images/2021.PNG);
-        background-position: center;
-        margin: auto;
-        height: 10rem;
-    
-    }
+  .home-1 {
+    width: 90%;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-    .past1 h2 {
-        font-family: "Lato", sans-serif; 
-        color: white; 
-    }
+  .tittle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
 
-    .past1 p {
-        font-family: "Lato", sans-serif;
-        color: white;  
-    }
+  .tittle h5 {
+    color: red;
+    font-size: 22px;
+    text-align: center;
+  }
 
-    .past2 {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-image: linear-gradient(rgba(200,0,0,0.7),rgba(220,0,0,0.8)), url(images/2022.PNG);
-        background-position: center;
-        margin: auto;
-        height: 10rem  
-    }
+  .tittle h1 {
+    color: red;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    width: 95vw;
+    margin-bottom: 30px;
+  }
 
-    .past2 h2 {
-        font-family: "Lato", sans-serif; 
-        color: white; 
-    }
+  .details {
+    background-color: white;
+    z-index: 1000;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .past2 p {
-        font-family: "Lato", sans-serif;
-        color: white;  
-    }
+  .details-desktop {
+    display: none;
+  }
 
-    .last {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
-        gap: 50px;
-        height: 10rem;
-        background-color: rgb(60, 60, 88);
-      }
+  .details p {
+    padding-top: 10px;
+    font-size: 19px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
 
-      .row h4 {
-        color: white;
-      }
+  .dates {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 50px;
+  }
 
-      .logos h4,
-      .logos p,
-      .non h4 {
-        color: white;
-      }
+  .dates p {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+  }
 
-      footer {
-        display: flex;
-        margin-left: 30px;
-        height: 5rem;
-        list-style: none;
-        width: 60%;
-      }
+  .dates .pdate3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+  }
 
-      .logo-footer,
-      .footer h2 {
-        list-style: none;
-      }
+  .dates-cont {
+    display: none;
+  }
 
+  .programs-about {
+    background-color: white;
+  }
 
+  .programs-about h4 {
+    font-size: 22px;
+    text-align: center;
+  }
 
+  .prog-desk {
+    display: none;
+  }
 
+  .progh4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
+  .progh4 hr {
+    width: 10%;
+    border-color: red;
+    margin-top: 10px;
+  }
+
+  .progp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .progp p {
+    font-family: "Lato", sans-serif;
+  }
+
+  .conf-logo {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1px outset whitesmoke;
+    margin: auto;
+    padding: 20px 0;
+  }
+
+  .hr-long {
+    margin-top: 2rem;
+  }
+
+  .conf-logo h2 {
+    font-family: "Lato", sans-serif;
+  }
+
+  .log-2 p {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+  }
+
+  .seepast-des {
+    display: none;
+  }
+
+  .seepast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .seepast hr {
+    width: 10%;
+    margin-bottom: 10px;
+    border-color: red;
+  }
+
+  .seepast h4 {
+    font-family: "Lato", sans-serif;
+    padding-bottom: 5px;
+    margin-top: 50px;
+  }
+
+  .seepast p {
+    font-family: "Lato", sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 5px;
+    font-weight: 700px;
+  }
+
+  .seepast .p2 {
+    margin-bottom: 20px;
+  }
+
+  .past-conf {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 50px;
+  }
+
+  .past1 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        rgba(200, 0, 0, 0.7),
+        rgba(220, 0, 0, 0.8)
+      ),
+      url(images/2021.PNG);
+    background-position: center;
+    margin: auto;
+    height: 10rem;
+  }
+
+  .past1 h2 {
+    font-family: "Lato", sans-serif;
+    color: white;
+  }
+
+  .past1 p {
+    font-family: "Lato", sans-serif;
+    color: white;
+  }
+
+  .past2 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        rgba(200, 0, 0, 0.7),
+        rgba(220, 0, 0, 0.8)
+      ),
+      url(images/2022.PNG);
+    background-position: center;
+    margin: auto;
+    height: 10rem;
+  }
+
+  .past2 h2 {
+    font-family: "Lato", sans-serif;
+    color: white;
+  }
+
+  .past2 p {
+    font-family: "Lato", sans-serif;
+    color: white;
+  }
+
+  .row h4 {
+    color: white;
+  }
+
+  .sponsors h4 {
+    color: white;
+    font-family: "Lato", sans-serif;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+
+  .sponsors hr {
+    width: 5%;
+    border-color: #ec52a2;
+  }
+
+  .sponsors {
+    width: 100%;
+    background-color: #272a31;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .companies {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+  }
+
+  .companies p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+  }
+
+  .companies .comp1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .companies .comp2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .foot-desk {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    height: 10rem;
+    list-style: none;
+    width: 100%;
+    background-color: white;
+    padding-left: 20px;
+  }
+
+  .foot-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .foot {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .foot-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .foot-right .lastp {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+  }
+
+  .foot-right .plast {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid white;
+  }
+
+  .humburger {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: none;
+    visibility: hidden;
+  }
+  .nav-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    position: relative;
+    left: 300px;
+  }
+
+  .nav-desktop li {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-desktop a {
+    color: black;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+  }
+
+  .nav-desktop a:hover {
+    color: red;
+    border: 2px solid red;
+  }
+
+  .my-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 200px;
+  }
+
+  .my-logo a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .my-logo a:hover {
+    color: red;
+    border: 2px solid red;
+  }
+
+  .log-2 .pp {
+    margin-top: -25px;
+  }
+
+  .log-2 p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+  }
+
+  .sub-main {
+    background-image: url(images/landingImg.png);
+  }
+
+  .home-1 {
+    width: 90%;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .tittle {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .sec1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tittle h5 {
+    display: none;
+  }
+
+  .tittle h1 {
+    width: 80%;
+    color: red;
+    font-size: 38px;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .details {
+    display: none;
+  }
+
+  .details-desktop {
+    background-color: white;
+    z-index: 1000;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .details-desktop p {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
+
+  .details p {
+    width: 80%;
+    padding-top: 10px;
+    font-size: 17px;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
+
+  .dates {
+    display: none;
+  }
+  .dates-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 7rem;
+  }
+
+  .mail {
+    margin-top: -1rem;
+  }
+
+  .programs-about {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .programs-about h4 {
+    font-size: 22px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+  }
+
+  .progh4 {
+    display: none;
+  }
+  .prog-desk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .prog-desk hr {
+    width: 3%;
+    border-color: red;
+    margin-top: -30px;
+  }
+
+  .prog-desk p {
+    width: 50%;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
+
+  .progp {
+    display: none;
+  }
+
+  .progp p {
+    font-family: "Lato", sans-serif;
+  }
+
+  .conf-logo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid whitesmoke;
+    margin: auto;
+    padding: 20px 0;
+  }
+
+  .hr-long {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .conf-logo h2 {
+    font-family: "Lato", sans-serif;
+  }
+
+  .log-2 p {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+  }
+
+  .seepast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .seepast-des {
+    font-family: "Lato", sans-serif;
+    margin-bottom: 2rem;
+  }
+
+  .seepast hr {
+    width: 3%;
+    margin-top: -2rem;
+    margin-bottom: 10px;
+    border-color: red;
+  }
+
+  .seepast h4 {
+    font-family: "Lato", sans-serif;
+    padding-bottom: 5px;
+    margin-top: 50px;
+  }
+
+  .seepast p {
+    display: none;
+  }
+
+  .past-conf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 3rem;
+  }
+
+  .past1 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        rgba(200, 0, 0, 0.7),
+        rgba(220, 0, 0, 0.8)
+      ),
+      url(images/2021.PNG);
+    background-position: center;
+    margin: auto;
+    height: 10rem;
+  }
+
+  .past1 h2 {
+    font-family: "Lato", sans-serif;
+    color: white;
+  }
+
+  .past1 p {
+    font-family: "Lato", sans-serif;
+    color: white;
+  }
+
+  .past2 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        rgba(200, 0, 0, 0.7),
+        rgba(220, 0, 0, 0.8)
+      ),
+      url(images/2022.PNG);
+    background-position: center;
+    margin: auto;
+    height: 10rem;
+  }
+
+  .past2 h2 {
+    font-family: "Lato", sans-serif;
+    color: white;
+  }
+
+  .past2 p {
+    font-family: "Lato", sans-serif;
+    color: white;
+  }
+
+  .row h4 {
+    color: white;
+  }
+
+  .sponsors {
+    display: none;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #272a31;
+  }
+
+  .foot {
+    display: none;
+  }
+
+  .foot-desk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .foot-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .foot-des-left {
+    display: flex;
+    gap: 5px;
+  }
+
+  .foot-right .lastp {
+    font-family: "Lato", sans-serif;
+    color: white;
+  }
+
+  .foot-right .plast {
+    font-family: "Lato", sans-serif;
+    margin-top: 10px;
+    color: white;
+  }
+
+  .foot-right .ppp {
+    font-family: "Lato", sans-serif;
+    margin-top: -10px;
+    color: white;
+  }
+
+  .log-bottom p {
+    color: white;
+  }
+
+  .log-bottom .pp {
+    margin-top: -15px;
+  }
 }
