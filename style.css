@@ -7,11 +7,23 @@
     scroll-behavior: smooth;
   }
 
+  body {
+    background-image: url(images/landingImg.png);
+  }
+
   header {
     width: 100%;
   }
 
-  .nav-mobile li {
+  .nav-desktop {
+    display: none;
+  }
+
+  .my-logo {
+    display: none;
+  }
+
+  .nav-mobile2 li {
     list-style: none;
     font-family: "Inter", "Times New Roman", Times, serif;
     font-size: 2rem;
@@ -20,7 +32,7 @@
     padding-bottom: 10px;
   }
 
-  .nav-mobile {
+  .nav-mobile2 {
     display: flex;
     position: fixed;
     left: -100%;
@@ -33,19 +45,19 @@
     padding: 4rem 1rem;
     text-align: start;
     transition: 0.5s;
-    z-index: 999;
+    z-index: 9999;
     margin-top: 10px;
   }
 
-  .nav-mobile.active {
+  .nav-mobile2.active {
     left: 0;
   }
 
-  .link {
+  .links {
     margin: 16px 0;
   }
 
-  .nav-mobile a {
+  .nav-mobile2 a {
     color: #fff5e1;
     text-decoration: none;
     font-family: "Inter", sans-serif;
@@ -54,7 +66,7 @@
     padding-left: 20px;
   }
 
-  .nav-mobile li {
+  .nav-mobile2 li {
     list-style: none;
     font-family: "Inter", "Times New Roman", Times, serif;
     font-size: 2rem;
@@ -72,6 +84,7 @@
     color: #67798e;
     margin-top: 30px;
     margin-left: 30px;
+    opacity: 1;
   }
 
   .lines {
@@ -81,6 +94,7 @@
     margin: 5px 0;
     transition: all 0.5s ease;
     background-color: #67798e;
+    color: white;
   }
   .hamburger.active .lines:nth-child(2) {
     opacity: 0;
@@ -95,7 +109,7 @@
   }
 
   .sub-main {
-    background-image: url(images/back2.PNG);
+    background-image: url(images/landingImg.png);
   }
 
   .home-1 {
@@ -110,7 +124,7 @@
 
   .tittle {
     width: 80%;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .tittle h5 {
@@ -144,7 +158,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
   }
 
   .agenda h2 {
@@ -172,8 +185,11 @@
   .programs {
     width: 100%;
     margin-top: 3rem;
-    background-color: black;
-    margin-bottom: 5rem;
+    background-image: url(images/program-bg.png);
+  }
+
+  .see-more {
+    display: none;
   }
 
   .programs h2 {
@@ -185,7 +201,7 @@
   }
 
   .program1 {
-    background-color: #3c3a39;
+    background-color: #394150;
     width: 95%;
     height: 4.5rem;
     display: flex;
@@ -194,6 +210,7 @@
     z-index: 10;
     gap: 10px;
     margin: auto;
+    opacity: 0.8;
   }
 
   .program1 h4 {
@@ -213,9 +230,10 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    background-color: #3c3a39;
+    background-color: #394150;
     margin: 10px auto;
     gap: 10px;
+    opacity: 0.8;
   }
 
   .program2 h4 {
@@ -235,9 +253,10 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    background-color: #3c3a39;
+    background-color: #394150;
     margin: 10px auto;
     gap: 10px;
+    opacity: 0.8;
   }
 
   .program3 h4 {
@@ -257,9 +276,10 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    background-color: #3c3a39;
+    background-color: #394150;
     margin: 10px auto;
     gap: 10px;
+    opacity: 0.8;
   }
 
   .program4 h4 {
@@ -279,9 +299,10 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    background-color: #3c3a39;
+    background-color: #394150;
     margin: 10px auto;
     gap: 10px;
+    opacity: 0.8;
   }
 
   .program5 h4 {
@@ -309,7 +330,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
   }
 
   .red-join p {
@@ -318,7 +338,8 @@
   }
 
   .speakers-container {
-    width: 98%;
+    background-color: white;
+    padding-top: 2rem;
   }
 
   .speakers-container h2 {
@@ -327,10 +348,9 @@
   }
 
   .speakers-container hr {
-    width: 10%;;
+    width: 10%;
     margin: 10px auto;
     border-color: red;
-    
   }
 
   .speaker1 {
@@ -462,5 +482,650 @@
     font-family: "Lato", sans-serif;
   }
 
-  
+  .speaker6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 20px;
+  }
+
+  .speaker6 h4 {
+    font-family: "Lato", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .speaker6 .p1 {
+    color: red;
+    font-family: "Lato", sans-serif;
+    padding-bottom: 10px;
+  }
+
+  .speaker6 .p2 {
+    font-family: "Lato", sans-serif;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  *,
+  html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  .main-home {
+    width: 100%;
+    background-image: url(images/landingImg.png);
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid white;
+  }
+
+  .nav-mobile2 {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    left: 300px;
+  }
+
+  .nav-desktop li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 5%;
+  }
+
+  .nav-desktop a {
+    color: black;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 27px;
+  }
+
+  .nav-desktop a:hover {
+    color: red;
+    border: 2px solid red;
+  }
+
+  .nav-desktop a:active {
+    color: #ec52a2;
+  }
+
+  .my-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 200px;
+  }
+
+  .my-logo p {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+  }
+
+  .sub-main {
+    width: 100%;
+    background-image: url(images/landingImg.png);
+    margin-left: 3rem;
+    text-align: left;
+  }
+
+  .part1 {
+    width: 70%;
+    margin-left: 10rem;
+  }
+
+  .home-1 {
+    width: 100%;
+  }
+
+  .tittle h5 {
+    color: red;
+    font-size: 30px;
+    text-align: left;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    padding-top: 100px;
+    margin-bottom: 1rem;
+  }
+
+  .tittle h1 {
+    color: red;
+    font-size: 40px;
+    font-family: "Lato", sans-serif;
+    font-weight: 900px;
+    text-align: left;
+    width: 60vw;
+    margin-top: 0;
+    margin-bottom: -1rem;
+  }
+
+  .details {
+    border: 1px solid white;
+  }
+
+  .details p {
+    padding-top: 30px;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    width: 70%;
+  }
+
+  .agenda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .agenda h2 {
+    padding-bottom: 10px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+  }
+
+  .agenda hr {
+    width: 2%;
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+    border-color: rgb(202, 53, 53);
+  }
+
+  .dates {
+    padding-top: 3rem;
+  }
+
+  .dates h2 {
+    font-family: "Lato", sans-serif;
+  }
+
+  .dates p {
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    padding: 10px 0;
+  }
+
+  .programs {
+    width: 100%;
+    margin-top: 8rem;
+    background-image: url(images/program-bg.png);
+  }
+
+  .programs h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .programs-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .all-programs {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .program1 {
+    background-color: #394150;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding: 5px;
+    opacity: 0.8;
+  }
+
+  .program1 h4 {
+    color: red;
+    font-family: "Lato", sans-serif;
+  }
+
+  .program1 p {
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
+
+  .program2 {
+    background-color: #394150;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding: 5px;
+    opacity: 0.8;
+  }
+
+  .program2 h4 {
+    color: red;
+    font-family: "Lato", sans-serif;
+  }
+
+  .program2 p {
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
+
+  .program3 {
+    background-color: #394150;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding: 5px;
+    opacity: 0.8;
+  }
+
+  .program3 h4 {
+    color: red;
+    font-family: "Lato", sans-serif;
+  }
+
+  .program3 p {
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
+
+  .program4 {
+    background-color: #394150;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding: 5px;
+    opacity: 0.8;
+  }
+
+  .program4 h4 {
+    color: red;
+    font-family: "Lato", sans-serif;
+  }
+
+  .program4 p {
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
+
+  .program5 {
+    background-color: #394150;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding: 5px;
+    opacity: 0.8;
+  }
+
+  .program5 h4 {
+    color: red;
+    font-family: "Lato", sans-serif;
+  }
+
+  .program5 p {
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+  }
+
+  .red-container {
+    display: none;
+  }
+
+  .see-more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .see-more h4 {
+    color: white;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    padding: 5rem 0;
+  }
+
+  .speakers-container {
+    width: 100%;
+    padding-bottom: 3rem;
+    background-color: #d3d3d3;
+    padding-top: 3rem;
+  }
+
+  .speakers-container h2 {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+  }
+
+  .speakers-container hr {
+    width: 2%;
+    margin: 10px auto;
+    border-color: red;
+  }
+
+  .speakers-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .speakers-desk {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speakers-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speakers-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .speaker1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 20px;
+  }
+
+  .bio1 {
+    margin-top: -3.5rem;
+  }
+
+  .speaker1 h4 {
+    font-family: "Lato", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .speaker1 .p1 {
+    color: red;
+    font-family: "Lato", sans-serif;
+    padding-bottom: 10px;
+    width: 110%;
+  }
+
+  .speaker1 .p2 {
+    font-family: "Lato", sans-serif;
+    width: 110%;
+  }
+
+  .speaker1 .img1 {
+    height: 20vh;
+    display: flex;
+    flex-grow: 12;
+  }
+
+  .speaker2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 20px;
+  }
+
+  .bio2 {
+    margin-top: -3.5rem;
+  }
+
+  .speaker2 h4 {
+    font-family: "Lato", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .speaker2 .p1 {
+    color: red;
+    font-family: "Lato", sans-serif;
+    padding-bottom: 10px;
+  }
+
+  .speaker2 .p2 {
+    font-family: "Lato", sans-serif;
+    width: 110%;
+  }
+
+  .speaker3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 20px;
+  }
+
+  .bio3 {
+    margin-top: -3rem;
+  }
+
+  .speaker3 h4 {
+    font-family: "Lato", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .speaker3 .p1 {
+    color: red;
+    font-family: "Lato", sans-serif;
+    padding-bottom: 10px;
+  }
+
+  .speaker3 .p2 {
+    font-family: "Lato", sans-serif;
+  }
+
+  .speaker4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 20px;
+  }
+
+  .bio4 {
+    margin-top: -3.5rem;
+  }
+
+  .speaker4 h4 {
+    font-family: "Lato", sans-serif;
+    padding-top: 10px;
+  }
+
+  .speaker4 .p1 {
+    color: red;
+    font-family: "Lato", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .speaker4 .p2 {
+    font-family: "Lato", sans-serif;
+  }
+
+  .speaker5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 20px;
+  }
+
+  .bio5 {
+    margin-top: -3rem;
+  }
+
+  .speaker5 h4 {
+    font-family: "Lato", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .speaker5 .p1 {
+    color: red;
+    font-family: "Lato", sans-serif;
+    padding-bottom: 10px;
+  }
+
+  .speaker5 .p2 {
+    font-family: "Lato", sans-serif;
+  }
+
+  .speaker6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 20px;
+  }
+
+  .bio6 {
+    margin-top: -5.5rem;
+  }
+
+  .speaker6 h4 {
+    font-family: "Lato", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .speaker6 .p1 {
+    color: red;
+    font-family: "Lato", sans-serif;
+    padding-bottom: 10px;
+  }
+
+  .speaker6 .p2 {
+    font-family: "Lato", sans-serif;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .sponsors h4 {
+   color: #D3D3D3;
+    font-family: "Lato", sans-serif;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+
+  .sponsors hr {
+    width: 2%;
+    border-color: red;
+  }
+
+  .sponsors {
+    width: 100%;
+    background-color: #272a31;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .companies {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: #D3D3D3;
+  }
+
+  .companies p {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+  }
+
+  .foot-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #d3d3d3;
+  }
+
+  .foot-right .lastp {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+  }
+
+  .foot-right .plast {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    padding-top: 10px;
+  }
+
+  .log-2 .pp {
+    margin-top: -5px;
+  }
+
+  .log-2 p {
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+  }
 }
