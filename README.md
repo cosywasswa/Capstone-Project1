@@ -37,7 +37,7 @@
 
 # 📖 [Portfolio website] <a name="about-project"></a>
 
-\*\*Save the plannet conference-website is project for a global conference on climate change and Carbon-Zero. It contains two pages i.e the home page and about me page.it is a responsive site for both mobile and desktop users.
+\*\*Save the plannet conference-website is a project for a global conference on climate change and Carbon-Zero. It contains two pages i.e the home page and about me page.it is a responsive site for both mobile and desktop users.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -80,7 +80,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
--This is my project [Live Demo Link](https://cosywasswa.github.io/My-Portfolio-Desktop/)
+-This is my project [Live Demo Link](https://cosywasswa.github.io/Capstone-Project1/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
