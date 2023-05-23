@@ -39,13 +39,13 @@
     top: 0;
     gap: 2rem;
     flex-direction: column;
-    background-color: #3c3a39;
+    background-color: #997462;
     width: 100%;
     height: 755px;
     padding: 4rem 1rem;
     text-align: start;
     transition: 0.5s;
-    z-index: 9999;
+    z-index: 1;
     margin-top: 10px;
   }
 
@@ -79,12 +79,13 @@
     display: block;
     flex-direction: column;
     align-items: flex-start;
-    z-index: 1000;
+    z-index: 9999;
     width: 20px;
-    color: #67798e;
+    color: black;
     margin-top: 30px;
     margin-left: 30px;
-    opacity: 1;
+    position: absolute;
+    top: -10px;
   }
 
   .lines {
@@ -93,8 +94,8 @@
     height: 3px;
     margin: 5px 0;
     transition: all 0.5s ease;
-    background-color: #67798e;
-    color: white;
+    background-color: black;
+    z-index: 1000;
   }
   .hamburger.active .lines:nth-child(2) {
     opacity: 0;
@@ -131,6 +132,7 @@
     color: red;
     font-size: 22px;
     text-align: left;
+    padding-top: 50px;
   }
 
   .tittle h1 {
@@ -213,6 +215,10 @@
     opacity: 0.8;
   }
 
+  .program1:hover {
+    border: 1px solid white;
+  }
+
   .program1 h4 {
     color: red;
     font-family: "Lato", sans-serif;
@@ -234,6 +240,10 @@
     margin: 10px auto;
     gap: 10px;
     opacity: 0.8;
+  }
+
+  .program2:hover {
+    border: 1px solid white;
   }
 
   .program2 h4 {
@@ -259,6 +269,10 @@
     opacity: 0.8;
   }
 
+  .program3:hover {
+    border: 1px solid white;
+  }
+
   .program3 h4 {
     color: red;
     font-family: "Lato", sans-serif;
@@ -282,6 +296,10 @@
     opacity: 0.8;
   }
 
+  .program4:hover {
+    border: 1px solid white;
+  }
+
   .program4 h4 {
     color: red;
     font-family: "Lato", sans-serif;
@@ -303,6 +321,10 @@
     margin: 10px auto;
     gap: 10px;
     opacity: 0.8;
+  }
+
+  .program5:hover {
+    border: 1px solid white;
   }
 
   .program5 h4 {
@@ -340,6 +362,7 @@
   .speakers-container {
     background-color: white;
     padding-top: 2rem;
+    padding-right: 5px;
   }
 
   .speakers-container h2 {
@@ -357,8 +380,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     margin: 20px 20px;
+  }
+
+  .bio1 hr {
+    margin-left: 0;
+    border-color: #272a31;
+    margin-top: -5px;
   }
 
   .speaker1 h4 {
@@ -370,6 +399,7 @@
   .speaker1 .p1 {
     color: red;
     font-family: "Lato", sans-serif;
+    font-style: italic;
     padding-bottom: 10px;
     width: 110%;
   }
@@ -393,6 +423,12 @@
     margin: 20px 20px;
   }
 
+  .bio2 hr {
+    margin-left: 0;
+    border-color: #272a31;
+    margin-top: -5px;
+  }
+
   .speaker2 h4 {
     font-family: "Lato", sans-serif;
     padding-top: 20px;
@@ -402,6 +438,7 @@
   .speaker2 .p1 {
     color: red;
     font-family: "Lato", sans-serif;
+    font-style: italic;
     padding-bottom: 10px;
   }
 
@@ -416,6 +453,12 @@
     align-items: center;
     gap: 10px;
     margin: 20px 20px;
+  }
+
+  .bio3 hr {
+    margin-left: 0;
+    border-color: #272a31;
+    margin-top: -5px;
   }
 
   .speaker3 h4 {
@@ -442,6 +485,12 @@
     margin: 20px 20px;
   }
 
+  .bio4 hr {
+    margin-left: 0;
+    border-color: #272a31;
+    margin-top: -5px;
+  }
+
   .speaker4 h4 {
     font-family: "Lato", sans-serif;
     padding-top: 10px;
@@ -450,6 +499,7 @@
   .speaker4 .p1 {
     color: red;
     font-family: "Lato", sans-serif;
+    font-style: italic;
     padding-top: 20px;
     padding-bottom: 10px;
   }
@@ -466,6 +516,12 @@
     margin: 20px 20px;
   }
 
+  .bio5 hr {
+    margin-left: 0;
+    border-color: #272a31;
+    margin-top: -5px;
+  }
+
   .speaker5 h4 {
     font-family: "Lato", sans-serif;
     padding-top: 20px;
@@ -475,6 +531,7 @@
   .speaker5 .p1 {
     color: red;
     font-family: "Lato", sans-serif;
+    font-style: italic;
     padding-bottom: 10px;
   }
 
@@ -490,6 +547,12 @@
     margin: 20px 20px;
   }
 
+  .bio6 hr {
+    margin-left: 0;
+    border-color: #272a31;
+    margin-top: -5px;
+  }
+
   .speaker6 h4 {
     font-family: "Lato", sans-serif;
     padding-top: 20px;
@@ -499,6 +562,7 @@
   .speaker6 .p1 {
     color: red;
     font-family: "Lato", sans-serif;
+    font-style: italic;
     padding-bottom: 10px;
   }
 
@@ -512,14 +576,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  *,
-  html {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-  }
-
   .main-home {
     width: 100%;
     background-image: url(images/landingImg.png);
@@ -530,10 +586,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 4rem;
+    height: 2rem;
     background-color: white;
     z-index: 100;
     border: 1px solid white;
+    margin-bottom: -2rem;
+    margin-top: 1rem;
   }
 
   .nav-mobile2 {
@@ -563,11 +621,15 @@
     padding: 0% 5%;
   }
 
+  .nav-desktop .abt a {
+    color: red;
+  }
+
   .nav-desktop a {
     color: black;
     text-decoration: none;
     font-family: "Lato", sans-serif;
-    font-size: 27px;
+    font-size: 22px;
   }
 
   .nav-desktop a:hover {
@@ -597,6 +659,11 @@
     background-image: url(images/landingImg.png);
     margin-left: 3rem;
     text-align: left;
+  }
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
   }
 
   .part1 {
@@ -715,6 +782,10 @@
     opacity: 0.8;
   }
 
+  .program1:hover {
+    border: 1px solid white;
+  }
+
   .program1 h4 {
     color: red;
     font-family: "Lato", sans-serif;
@@ -735,6 +806,10 @@
     z-index: 10;
     padding: 5px;
     opacity: 0.8;
+  }
+
+  .program2:hover {
+    border: 1px solid white;
   }
 
   .program2 h4 {
@@ -759,6 +834,10 @@
     opacity: 0.8;
   }
 
+  .program3:hover {
+    border: 1px solid white;
+  }
+
   .program3 h4 {
     color: red;
     font-family: "Lato", sans-serif;
@@ -781,6 +860,10 @@
     opacity: 0.8;
   }
 
+  .program4:hover {
+    border: 1px solid white;
+  }
+
   .program4 h4 {
     color: red;
     font-family: "Lato", sans-serif;
@@ -801,6 +884,10 @@
     z-index: 10;
     padding: 5px;
     opacity: 0.8;
+  }
+
+  .program5:hover {
+    border: 1px solid white;
   }
 
   .program5 h4 {
@@ -890,6 +977,11 @@
     margin-top: -3.5rem;
   }
 
+  .bio1 hr {
+    margin-left: 0;
+    border-color: #272a31;
+  }
+
   .speaker1 h4 {
     font-family: "Lato", sans-serif;
     padding-top: 20px;
@@ -926,6 +1018,11 @@
     margin-top: -3.5rem;
   }
 
+  .bio2 hr {
+    margin-left: 0;
+    border-color: #272a31;
+  }
+
   .speaker2 h4 {
     font-family: "Lato", sans-serif;
     padding-top: 20px;
@@ -953,6 +1050,11 @@
 
   .bio3 {
     margin-top: -3rem;
+  }
+
+  .bio3 hr {
+    margin-left: 0;
+    border-color: #272a31;
   }
 
   .speaker3 h4 {
@@ -983,6 +1085,11 @@
     margin-top: -3.5rem;
   }
 
+  .bio4 hr {
+    margin-left: 0;
+    border-color: #272a31;
+  }
+
   .speaker4 h4 {
     font-family: "Lato", sans-serif;
     padding-top: 10px;
@@ -1005,10 +1112,16 @@
     align-items: center;
     gap: 10px;
     margin: 20px 20px;
+    padding-left: 30px;
   }
 
   .bio5 {
     margin-top: -3rem;
+  }
+
+  .bio5 hr {
+    margin-left: 0;
+    border-color: #272a31;
   }
 
   .speaker5 h4 {
@@ -1039,6 +1152,11 @@
     margin-top: -5.5rem;
   }
 
+  .bio6 hr {
+    margin-left: 0;
+    border-color: #272a31;
+  }
+
   .speaker6 h4 {
     font-family: "Lato", sans-serif;
     padding-top: 20px;
@@ -1060,10 +1178,11 @@
   }
 
   .sponsors h4 {
-   color: #D3D3D3;
+    color: #d3d3d3;
     font-family: "Lato", sans-serif;
     padding-bottom: 10px;
-    padding-top: 30px;
+    padding-top: 35px;
+    line-height: 50px;
   }
 
   .sponsors hr {
@@ -1085,12 +1204,22 @@
     display: flex;
     justify-content: center;
     gap: 40px;
-    color: #D3D3D3;
+    color: #d3d3d3;
   }
 
   .companies p {
     font-family: "Lato", sans-serif;
     font-weight: 300;
+    font-size: 17px;
+  }
+
+  .companies h3 {
+    font-family: "Lato", sans-serif;
+    font-size: 23px;
+  }
+
+  .companies h2 {
+    font-size: 27px;
   }
 
   .foot-left {
@@ -1121,7 +1250,7 @@
   }
 
   .log-2 .pp {
-    margin-top: -5px;
+    margin-top: -25px;
   }
 
   .log-2 p {
