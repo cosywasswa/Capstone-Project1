@@ -19,6 +19,10 @@
     display: none;
   }
 
+  .nav-part1 {
+    display: none;
+  }
+
   .my-logo {
     display: none;
   }
@@ -101,18 +105,27 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .sub-main {
+  .top {
     background-image: url(images/landingImg.png);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .home-1 {
-    width: 90%;
+    width: 100%;
     background-size: contain;
     background-position: center;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .part1 {
+    width: 90%;
   }
 
   .tittle {
@@ -138,10 +151,14 @@
 
   .details {
     border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
   }
 
   .details p {
-    padding-top: 30px;
     font-size: 15px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -574,12 +591,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 2rem;
+    height: 3rem;
     background-color: white;
-    z-index: 100;
     border: 1px solid white;
-    margin-bottom: -2rem;
-    margin-top: 1rem;
   }
 
   .nav-mobile2 {
@@ -594,13 +608,40 @@
     display: none;
   }
 
+  .div-top {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    padding-left: 315px;
+  }
+
+  .nav-part1 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    height: 20px;
+    background-color: black;
+  }
+
+  .nav-part1 a {
+    text-decoration: none;
+    color: white;
+    font-family: "Lato", sans-serif;
+  }
+
   .nav-desktop {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
-    position: relative;
-    left: 300px;
+    position: absolute;
+    left: 610px;
+    top: 30px;
   }
 
   .nav-desktop li {
@@ -635,6 +676,13 @@
     align-items: center;
     position: absolute;
     left: 200px;
+    top: 20px;
+  }
+
+  .nav-desktop .subscribe a {
+    color: red;
+    border: 2px solid red;
+    padding: 0 5px;
   }
 
   .my-logo p {
