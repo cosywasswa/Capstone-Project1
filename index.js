@@ -12,11 +12,10 @@ document.querySelectorAll('.links').forEach((n) => n
     navMenu.classList.remove('active');
   }));
 
-
-  const container = document.querySelector('.container-speakers');
-  const speakers = document.createElement('div');
-  container.appendChild(speakers);
-  speakers.innerHTML = `
+const container = document.querySelector('.container-speakers');
+const speakers = document.createElement('div');
+container.appendChild(speakers);
+speakers.innerHTML = `
   <div class="speakers-container">
   <div class="hrtittle">
   <h2>Featured speakers</h2>
@@ -95,5 +94,3 @@ document.querySelectorAll('.links').forEach((n) => n
   </div>
 </div>
   `;
-
- 
