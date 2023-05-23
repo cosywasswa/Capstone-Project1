@@ -9,6 +9,7 @@
 
   body {
     background-image: url(images/landingImg.png);
+    margin: 0;
   }
 
   header {
@@ -21,6 +22,10 @@
   }
 
   .my-logo {
+    display: none;
+  }
+
+  .div-top {
     display: none;
   }
 
@@ -100,18 +105,28 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .sub-main {
+  .top {
     background-image: url(images/landingImg.png);
   }
 
   .home-1 {
-    width: 90%;
+    width: 100%;
     background-size: contain;
     background-position: center;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .middle {
+    background-color: white;
+    width: 100%;
+  }
+
+  .bottom {
+    width: 100%;
+    background-color: white;
   }
 
   .tittle {
@@ -273,9 +288,10 @@
 
   .seepast h4 {
     font-family: "Lato", sans-serif;
+    font-size: 22px;
     padding-bottom: 5px;
     margin-top: 50px;
-    width: 95%;
+    width: 99%;
   }
 
   .seepast p {
@@ -453,16 +469,12 @@
 }
 
 @media only screen and (min-width: 768px) {
-  body {
-    margin: 0;
-  }
-
   header {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 4rem;
+    height: 6rem;
     background-color: white;
     z-index: 100;
     border: 1px solid white;
@@ -472,19 +484,49 @@
     display: none;
   }
 
+  .div-top {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    height: 30px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin-top: -10px;
+    padding-left: 315px;
+  }
+
+  .nav-part1 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    background-color: black;
+  }
+
+  .nav-part1 a {
+    text-decoration: none;
+    color: white;
+    font-family: "Lato", sans-serif;
+  }
+
   .nav-mobile2 {
     display: none;
     visibility: hidden;
   }
 
   .nav-desktop {
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
-    gap: 20px;
+    gap: 50px;
     position: relative;
-    left: 300px;
+    top: 10px;
+    left: 150px;
+    padding-top: 10px;
   }
 
   .nav-desktop li {
@@ -504,6 +546,12 @@
     color: black;
   }
 
+  .nav-desktop .subscribe a {
+    color: red;
+    border: 2px solid red;
+    padding: 0 5px;
+  }
+
   .nav-desktop .abt a {
     color: red;
   }
@@ -519,6 +567,7 @@
     align-items: center;
     position: absolute;
     left: 200px;
+    top: 30px;
   }
 
   .my-logo a:hover {
@@ -532,15 +581,16 @@
 
   .log-2 p {
     font-family: "Lato", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 17px;
   }
 
-  .sub-main {
+  .top {
     background-image: url(images/landingImg.png);
   }
 
   .home-1 {
-    width: 90%;
+    width: 100%;
     background-size: contain;
     background-position: center;
     margin: 0 auto;
@@ -579,6 +629,11 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
   }
 
   .details {
@@ -702,11 +757,12 @@
   .seepast-des {
     font-family: "Lato", sans-serif;
     margin-bottom: 2rem;
+    padding-left: 400px;
   }
 
   .seepast hr {
     width: 3%;
-    margin-top: -2rem;
+    margin-top: -1rem;
     margin-bottom: 10px;
     border-color: red;
   }
@@ -722,11 +778,13 @@
   }
 
   .past-conf {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     padding-bottom: 3rem;
+    padding-left: 300px;
   }
 
   .past1 {
