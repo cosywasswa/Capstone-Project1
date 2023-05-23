@@ -80,7 +80,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
--This is my project [Live Demo Link](https://cosywasswa.github.io/Capstone-Project1/)
+-This is my Capstone project [Live Demo Link](https://cosywasswa.github.io/Capstone-Project1/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,7 +152,8 @@ If you like this project please give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Acknowledgement goes to the CC community for using this website for study purposes.
+Acknowledgement goes to cindy shin for making this website template design available status
+.
 
 I would like to thank Microverse for the knowledge and guidance given.
 
