@@ -984,14 +984,13 @@
 
   .speaker1 h4 {
     font-family: "Lato", sans-serif;
-    padding-top: 20px;
-    padding-bottom: 10px;
+   margin-top: 3rem;
   }
 
   .speaker1 .p1 {
     color: red;
+    font-style: italic;
     font-family: "Lato", sans-serif;
-    padding-bottom: 10px;
     width: 110%;
   }
 
@@ -1011,7 +1010,8 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin: 20px 20px;
+    padding: 20px 0;
+    margin-left: -2rem;
   }
 
   .bio2 {
@@ -1025,14 +1025,13 @@
 
   .speaker2 h4 {
     font-family: "Lato", sans-serif;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    margin-top: 3rem;
   }
 
   .speaker2 .p1 {
     color: red;
     font-family: "Lato", sans-serif;
-    padding-bottom: 10px;
+    font-style: italic;
   }
 
   .speaker2 .p2 {
@@ -1059,13 +1058,13 @@
 
   .speaker3 h4 {
     font-family: "Lato", sans-serif;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    margin-top: 5rem;
   }
 
   .speaker3 .p1 {
     color: red;
     font-family: "Lato", sans-serif;
+    font-style: italic;
     padding-bottom: 10px;
   }
 
@@ -1092,14 +1091,14 @@
 
   .speaker4 h4 {
     font-family: "Lato", sans-serif;
-    padding-top: 10px;
+    margin-top: 5rem;
   }
 
   .speaker4 .p1 {
     color: red;
     font-family: "Lato", sans-serif;
+    font-style: italic;
     padding-top: 20px;
-    padding-bottom: 10px;
   }
 
   .speaker4 .p2 {
@@ -1126,14 +1125,13 @@
 
   .speaker5 h4 {
     font-family: "Lato", sans-serif;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    margin-top: 5rem;
   }
 
   .speaker5 .p1 {
     color: red;
     font-family: "Lato", sans-serif;
-    padding-bottom: 10px;
+    font-style: italic;
   }
 
   .speaker5 .p2 {
@@ -1159,14 +1157,13 @@
 
   .speaker6 h4 {
     font-family: "Lato", sans-serif;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    margin-top: 5rem;
   }
 
   .speaker6 .p1 {
     color: red;
     font-family: "Lato", sans-serif;
-    padding-bottom: 10px;
+    font-style: italic;
   }
 
   .speaker6 .p2 {
@@ -1180,7 +1177,6 @@
   .sponsors h4 {
     color: #d3d3d3;
     font-family: "Lato", sans-serif;
-    padding-bottom: 10px;
     padding-top: 35px;
     line-height: 50px;
   }
