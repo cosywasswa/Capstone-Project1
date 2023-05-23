@@ -67,15 +67,6 @@
     padding-left: 20px;
   }
 
-  .nav-mobile2 li {
-    list-style: none;
-    font-family: "Inter", "Times New Roman", Times, serif;
-    font-size: 2rem;
-    font-weight: 700;
-    border-bottom: 1px solid #6f6c6b;
-    padding-bottom: 10px;
-  }
-
   .hamburger {
     display: block;
     flex-direction: column;
@@ -86,7 +77,6 @@
     margin-top: 30px;
     margin-left: 30px;
     position: absolute;
-
   }
 
   .lines {
@@ -95,8 +85,9 @@
     height: 3px;
     margin: 5px 0;
     transition: all 0.5s ease;
-    background-color: black
+    background-color: black;
   }
+
   .hamburger.active .lines:nth-child(2) {
     opacity: 0;
   }
@@ -312,7 +303,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         rgba(200, 0, 0, 0.7),
         rgba(220, 0, 0, 0.8)
       ),
@@ -338,7 +330,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         rgba(200, 0, 0, 0.7),
         rgba(220, 0, 0, 0.8)
       ),
@@ -355,15 +348,15 @@
 
   .past2 p {
     font-family: "Lato", sans-serif;
-    color: #D3D3D3;
+    color: #d3d3d3;
   }
 
   .row h4 {
-    color: #D3D3D3;
+    color: #d3d3d3;
   }
 
   .sponsors h4 {
-    color: #D3D3D3;
+    color: #d3d3d3;
     font-family: "Lato", sans-serif;
     padding-bottom: 10px;
     padding-top: 35px;
@@ -389,7 +382,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    color:#D3D3D3;
+    color: #d3d3d3;
   }
 
   .companies p {
@@ -460,9 +453,10 @@
 }
 
 @media only screen and (min-width: 768px) {
-body {
-  margin: 0;
-}
+  body {
+    margin: 0;
+  }
+
   header {
     display: flex;
     justify-content: center;
@@ -482,6 +476,7 @@ body {
     display: none;
     visibility: hidden;
   }
+
   .nav-desktop {
     display: flex;
     justify-content: center;
@@ -497,15 +492,20 @@ body {
     justify-content: space-between;
   }
 
-  .nav-desktop .abt a {
-    color: red;
-  }
-
   .nav-desktop a {
     color: black;
     text-decoration: none;
     font-family: "Lato", sans-serif;
     font-size: 20px;
+  }
+
+  .my-logo a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-desktop .abt a {
+    color: red;
   }
 
   .nav-desktop a:hover {
@@ -519,11 +519,6 @@ body {
     align-items: center;
     position: absolute;
     left: 200px;
-  }
-
-  .my-logo a {
-    text-decoration: none;
-    color: black;
   }
 
   .my-logo a:hover {
@@ -617,6 +612,7 @@ body {
   .dates {
     display: none;
   }
+
   .dates-cont {
     display: flex;
     justify-content: center;
@@ -646,6 +642,7 @@ body {
   .progh4 {
     display: none;
   }
+
   .prog-desk {
     display: flex;
     flex-direction: column;
@@ -690,11 +687,6 @@ body {
 
   .conf-logo h2 {
     font-family: "Lato", sans-serif;
-  }
-
-  .log-2 p {
-    font-family: "Lato", sans-serif;
-    font-size: 20px;
   }
 
   .seepast {
@@ -743,7 +735,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         rgba(200, 0, 0, 0.7),
         rgba(220, 0, 0, 0.8)
       ),
@@ -774,7 +767,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         rgba(200, 0, 0, 0.7),
         rgba(220, 0, 0, 0.8)
       ),
