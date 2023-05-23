@@ -16,7 +16,7 @@ const speaker1 = [
   {
     name: 'Christiana Figueres',
     image: './images/christiana2.PNG',
-    position: `Karen Christiana Figueres Olsen is a Costa Rican diplomat`,
+    position: 'Karen Christiana Figueres Olsen is a Costa Rican diplomat',
     desc: 'She was appointed Executive Secretary on Climate Change in July 2010',
   },
 ];
@@ -25,7 +25,7 @@ const speaker2 = [
   {
     name: 'Naomi klein',
     image: './images/naomi2.PNG',
-    position: `Naomi A. Klein is a Canadian author, social activist, and filmmaker`,
+    position: 'Naomi A. Klein is a Canadian author, social activist, and filmmaker',
     desc: ' her political analyses, support of ecofeminism, organized labour.',
   },
 ];
@@ -34,7 +34,7 @@ const speaker3 = [
   {
     name: 'David Suzuki',
     image: './images/suzuki2.PNG',
-    position: `David Takayoshi Suzuki CC OBC FRSC is a Canadian academic`,
+    position: 'David Takayoshi Suzuki CC OBC FRSC is a Canadian academic',
     desc: ' Suzuki earned a PhD in zoology from the University of Chicago in 1961',
   },
 ];
@@ -43,7 +43,7 @@ const speaker4 = [
   {
     name: 'Alexandra Palt ',
     image: './images/alexanda2.PNG',
-    position: `Chief Sustainability Officer of L'Oreal; Lucas Joppa`,
+    position: 'Chief Sustainability Officer of L\'Oreal; Lucas Joppa',
     desc: ' Chief Environmental Officer of Microsoft',
   },
 ];
@@ -52,7 +52,7 @@ const speaker5 = [
   {
     name: 'Bill Mckibben ',
     image: './images/bill2.PNG',
-    position: `McKibben is an American environmentalist`,
+    position: 'McKibben is an American environmentalist',
     desc: ' journalist who has written extensively on global warming',
   },
 ];
@@ -61,7 +61,7 @@ const speaker6 = [
   {
     name: 'Alexandra Palt ',
     image: './images/alexanda2.PNG',
-    position: ` Chief Sustainability Officer of L'Oreal; Lucas Joppa`,
+    position: ' Chief Sustainability Officer of L\'Oreal; Lucas Joppa',
     desc: 'Chief Environmental Officer of Microsoft',
   },
 ];
