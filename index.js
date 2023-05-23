@@ -32,6 +32,7 @@ document.querySelectorAll('.links').forEach((n) => n
     <div class="bio1">
       <h4>Christiana Figueres</h4>
       <p class="p1">Karen Christiana Figueres Olsen is a Costa Rican diplomat</p>
+      <hr>
       <p class="p2">She was appointed Executive Secretary on Climate Change in July 2010</p>
     </div>
   </div>
@@ -42,6 +43,7 @@ document.querySelectorAll('.links').forEach((n) => n
     <div class="bio2">
       <h4>Naomi klein</h4>
       <p class="p1">Naomi A. Klein is a Canadian author, social activist, and filmmaker</p>
+      <hr>
       <p class="p2"> her political analyses, support of ecofeminism, organized labour.</p>
     </div>
   </div>
@@ -52,6 +54,7 @@ document.querySelectorAll('.links').forEach((n) => n
     <div class="bio3">
       <h4>David Suzuki</h4>
       <p class="p1">David Takayoshi Suzuki CC OBC FRSC is a Canadian academic</p>
+      <hr>
       <p class="p2">Suzuki earned a PhD in zoology from the University of Chicago in 1961</p>
     </div>
   </div>
@@ -64,6 +67,7 @@ document.querySelectorAll('.links').forEach((n) => n
     <div class="bio4">
       <h4>Alexandra Palt </h4>
       <p class="p1"> Chief Sustainability Officer of L'Oreal; Lucas Joppa</p>
+      <hr>
       <p class="p2">Chief Environmental Officer of Microsoft</p>
     </div>
   </div>
@@ -74,6 +78,7 @@ document.querySelectorAll('.links').forEach((n) => n
     <div class="bio5">
       <h4>Bill Mckibben</h4>
       <p class="p1">McKibben is an American environmentalist</p>
+      <hr>
       <p class="p2">journalist who has written extensively on global warming</p>
     </div>
   </div>
@@ -84,6 +89,7 @@ document.querySelectorAll('.links').forEach((n) => n
     <div class="bio6">
       <h4>Alexandra Palt </h4>
       <p class="p1"> Chief Sustainability Officer of L'Oreal; Lucas Joppa</p>
+      <hr>
       <p class="p2">Chief Environmental Officer of Microsoft</p>
     </div>
   </div>
