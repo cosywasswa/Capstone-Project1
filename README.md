@@ -152,8 +152,7 @@ If you like this project please give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Acknowledgement goes to cindy shin for making this website template design available status
-.
+This template was inspired by [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 
 I would like to thank Microverse for the knowledge and guidance given.
 
