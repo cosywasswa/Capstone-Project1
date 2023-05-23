@@ -12,6 +12,60 @@ document.querySelectorAll('.links').forEach((n) => n
     navMenu.classList.remove('active');
   }));
 
+const speaker1 = [
+  {
+    name: 'Christiana Figueres',
+    image: './images/christiana2.PNG',
+    position: `Karen Christiana Figueres Olsen is a Costa Rican diplomat`,
+    desc: 'She was appointed Executive Secretary on Climate Change in July 2010',
+  },
+];
+
+const speaker2 = [
+  {
+    name: 'Naomi klein',
+    image: './images/naomi2.PNG',
+    position: `Naomi A. Klein is a Canadian author, social activist, and filmmaker`,
+    desc: ' her political analyses, support of ecofeminism, organized labour.',
+  },
+];
+
+const speaker3 = [
+  {
+    name: 'David Suzuki',
+    image: './images/suzuki2.PNG',
+    position: `David Takayoshi Suzuki CC OBC FRSC is a Canadian academic`,
+    desc: ' Suzuki earned a PhD in zoology from the University of Chicago in 1961',
+  },
+];
+
+const speaker4 = [
+  {
+    name: 'Alexandra Palt ',
+    image: './images/alexanda2.PNG',
+    position: `Chief Sustainability Officer of L'Oreal; Lucas Joppa`,
+    desc: ' Chief Environmental Officer of Microsoft',
+  },
+];
+
+const speaker5 = [
+  {
+    name: 'Bill Mckibben ',
+    image: './images/bill2.PNG',
+    position: `McKibben is an American environmentalist`,
+    desc: ' journalist who has written extensively on global warming',
+  },
+];
+
+const speaker6 = [
+  {
+    name: 'Alexandra Palt ',
+    image: './images/alexanda2.PNG',
+    position: ` Chief Sustainability Officer of L'Oreal; Lucas Joppa`,
+    desc: 'Chief Environmental Officer of Microsoft',
+  },
+];
+
 const container = document.querySelector('.container-speakers');
 const speakers = document.createElement('div');
 container.appendChild(speakers);
@@ -24,73 +78,85 @@ speakers.innerHTML = `
 <div class="speakers-align">
 <section class="speakers-desk">
   <div class="speakers-left">
+  <article>
   <div class="speaker1">
     <div class="img1">
-      <img src="images/christiana2.PNG" alt="">
+      <img src="${speaker1[0].image}" alt="">
     </div>
     <div class="bio1">
-      <h4>Christiana Figueres</h4>
-      <p class="p1">Karen Christiana Figueres Olsen is a Costa Rican diplomat</p>
+      <h4>${speaker1[0].name}</h4>
+      <p class="p1">${speaker1[0].position}</p>
       <hr>
-      <p class="p2">She was appointed Executive Secretary on Climate Change in July 2010</p>
+      <p class="p2">${speaker1[0].desc}</p>
     </div>
   </div>
+  </article>
+  <article>
   <div class="speaker2">
     <div class="img2">
-      <img src="images/naomi2.PNG" alt="">
+      <img src="${speaker2[0].image}" alt="">
     </div>
     <div class="bio2">
-      <h4>Naomi klein</h4>
-      <p class="p1">Naomi A. Klein is a Canadian author, social activist, and filmmaker</p>
+      <h4>${speaker2[0].name}</h4>
+      <p class="p1">${speaker2[0].position}</p>
       <hr>
-      <p class="p2"> her political analyses, support of ecofeminism, organized labour.</p>
+      <p class="p2"> ${speaker2[0].desc}</p>
     </div>
   </div>
+  </article>
+  <article>
   <div class="speaker3">
     <div class="img3">
-      <img src="images/suzuki2.PNG" alt="">
+      <img src="${speaker3[0].image}" alt="">
     </div>
     <div class="bio3">
-      <h4>David Suzuki</h4>
-      <p class="p1">David Takayoshi Suzuki CC OBC FRSC is a Canadian academic</p>
+      <h4>${speaker3[0].name}</h4>
+      <p class="p1">${speaker3[0].position}</p>
       <hr>
-      <p class="p2">Suzuki earned a PhD in zoology from the University of Chicago in 1961</p>
+      <p class="p2">${speaker3[0].desc}</p>
     </div>
   </div>
 </div>
 <div class="speakers-right">
+</article>
+<article>
   <div class="speaker4">
     <div class="img4">
-      <img src="images/alexanda2.PNG" alt="">
+      <img src="${speaker4[0].image}" alt="">
     </div>
     <div class="bio4">
-      <h4>Alexandra Palt </h4>
-      <p class="p1"> Chief Sustainability Officer of L'Oreal; Lucas Joppa</p>
+      <h4>${speaker4[0].name}</h4>
+      <p class="p1"> ${speaker4[0].position}</p>
       <hr>
-      <p class="p2">Chief Environmental Officer of Microsoft</p>
+      <p class="p2">${speaker4[0].desc}</p>
     </div>
   </div>
+  </article>
+  <article>
   <div class="speaker5">
     <div class="img5">
-      <img src="images/bill2.PNG" alt="">
+      <img src="${speaker5[0].image}" alt="">
     </div>
     <div class="bio5">
-      <h4>Bill Mckibben</h4>
-      <p class="p1">McKibben is an American environmentalist</p>
+      <h4>${speaker5[0].name}</h4>
+      <p class="p1">${speaker5[0].position}</p>
       <hr>
-      <p class="p2">journalist who has written extensively on global warming</p>
+      <p class="p2">${speaker5[0].desc}</p>
     </div>
   </div>
+  </article>
+  <article>
   <div class="speaker6">
     <div class="img6">
-      <img src="images/alexanda2.PNG" alt="">
+      <img src="${speaker6[0].image}" alt="">
     </div>
     <div class="bio6">
-      <h4>Alexandra Palt </h4>
-      <p class="p1"> Chief Sustainability Officer of L'Oreal; Lucas Joppa</p>
+      <h4>${speaker6[0].name}</h4>
+      <p class="p1">${speaker6[0].position}</p>
       <hr>
-      <p class="p2">Chief Environmental Officer of Microsoft</p>
+      <p class="p2">${speaker5[0].desc}</p>
     </div>
   </div>
 </div>
+</article>
   `;
