@@ -495,7 +495,7 @@
     align-items: center;
     padding-top: 10px;
     margin-top: -10px;
-    padding-left: 315px;
+    padding-left: -313px;
   }
 
   .nav-part1 {
@@ -503,6 +503,8 @@
     display: flex;
     gap: 20px;
     background-color: black;
+    position: relative;
+    left: 315px;
   }
 
   .nav-part1 a {
