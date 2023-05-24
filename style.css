@@ -617,7 +617,7 @@
     display: flex;
     justify-content: center;
     margin-top: -40px;
-    padding-left: 315px;
+    padding-left: -313px;
   }
 
   .nav-part1 {
@@ -626,6 +626,8 @@
     gap: 20px;
     height: 20px;
     background-color: black;
+    position: relative;
+    left: 315px;
   }
 
   .nav-part1 a {
